@@ -25,7 +25,7 @@ class VAT:
 	def find_min_cor(self,I,J):
 		"""function will find the co-ordinate of the smallest element
 		   of the matrix with its rows belonging in I and column in J."""
-		min_value=10
+		min_value=100000
 		min_cor=(-1,-1)
 		
 		list_I=list(I)
