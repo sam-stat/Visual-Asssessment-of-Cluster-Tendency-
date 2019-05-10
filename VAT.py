@@ -9,6 +9,7 @@ import numpy as np
 import time
 from numpy import unravel_index
 import matplotlib.pyplot as plt
+import math
 from scipy.spatial import distance_matrix
 
 #class for implementation of VAT algorithm
@@ -25,7 +26,7 @@ class VAT:
 	def find_min_cor(self,I,J):
 		"""function will find the co-ordinate of the smallest element
 		   of the matrix with its rows belonging in I and column in J."""
-		min_value=100000
+		min_value=math.inf
 		min_cor=(-1,-1)
 		
 		list_I=list(I)
